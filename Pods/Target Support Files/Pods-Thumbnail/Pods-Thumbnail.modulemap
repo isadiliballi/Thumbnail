@@ -1,0 +1,6 @@
+module Pods_Thumbnail {
+  umbrella header "Pods-Thumbnail-umbrella.h"
+
+  export *
+  module * { export * }
+}
