@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "Thumbnail"
   spec.version      = "0.0.1"
-  spec.summary      = "A short description of Thumbnail."
+  spec.summary      = "Get thumbnails of photos, videos and PDFs in Swift."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -52,9 +52,9 @@ Pod::Spec.new do |spec|
   #  profile URL.
   #
 
-  spec.author             = { "isadiliballi" => "isadiliballi@icloud.com" }
+  spec.author             = { "isadiliballi" => "isadiliballi@gmail.com" }
   # Or just: spec.author    = "isadiliballi"
-  # spec.authors            = { "isadiliballi" => "isadiliballi@icloud.com" }
+  # spec.authors            = { "isadiliballi" => "isadiliballi@gmail.com" }
   # spec.social_media_url   = "https://twitter.com/isadiliballi"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
