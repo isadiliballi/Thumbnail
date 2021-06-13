@@ -10,6 +10,7 @@
 		1EAFBD732675135D00D84A4B /* Thumbnail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EAFBD692675135D00D84A4B /* Thumbnail.framework */; };
 		1EAFBD782675135D00D84A4B /* ThumbnailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAFBD772675135D00D84A4B /* ThumbnailTests.swift */; };
 		1EAFBD7A2675135D00D84A4B /* Thumbnail.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EAFBD6C2675135D00D84A4B /* Thumbnail.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1EAFBD8B267588B400D84A4B /* Thumbnails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAFBD8A267588B400D84A4B /* Thumbnails.swift */; };
 		C43BCF770F038E8DD683A147 /* libPods-Thumbnail.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4169C9F3E462B288709D4DF6 /* libPods-Thumbnail.a */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 		1EAFBD722675135D00D84A4B /* ThumbnailTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThumbnailTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EAFBD772675135D00D84A4B /* ThumbnailTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailTests.swift; sourceTree = "<group>"; };
 		1EAFBD792675135D00D84A4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EAFBD8A267588B400D84A4B /* Thumbnails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thumbnails.swift; sourceTree = "<group>"; };
 		2AC402D5B18C2DC7C98B2C8A /* Pods-Thumbnail.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thumbnail.debug.xcconfig"; path = "Target Support Files/Pods-Thumbnail/Pods-Thumbnail.debug.xcconfig"; sourceTree = "<group>"; };
 		4169C9F3E462B288709D4DF6 /* libPods-Thumbnail.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Thumbnail.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		99A2147A178BAD9C66D30926 /* Pods-Thumbnail.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thumbnail.release.xcconfig"; path = "Target Support Files/Pods-Thumbnail/Pods-Thumbnail.release.xcconfig"; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 		1EAFBD6B2675135D00D84A4B /* Thumbnail */ = {
 			isa = PBXGroup;
 			children = (
+				1EAFBD8A267588B400D84A4B /* Thumbnails.swift */,
 				1EAFBD6C2675135D00D84A4B /* Thumbnail.h */,
 				1EAFBD6D2675135D00D84A4B /* Info.plist */,
 			);
@@ -107,7 +110,6 @@
 				2AC402D5B18C2DC7C98B2C8A /* Pods-Thumbnail.debug.xcconfig */,
 				99A2147A178BAD9C66D30926 /* Pods-Thumbnail.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -173,6 +175,7 @@
 				TargetAttributes = {
 					1EAFBD682675135D00D84A4B = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					1EAFBD712675135D00D84A4B = {
 						CreatedOnToolsVersion = 12.4;
@@ -245,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EAFBD8B267588B400D84A4B /* Thumbnails.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +397,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2AC402D5B18C2DC7C98B2C8A /* Pods-Thumbnail.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4Q3BR6HQNK;
@@ -409,6 +414,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = isa.Thumbnail;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -418,6 +424,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 99A2147A178BAD9C66D30926 /* Pods-Thumbnail.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4Q3BR6HQNK;
@@ -442,6 +449,7 @@
 		1EAFBD812675135D00D84A4B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4Q3BR6HQNK;
 				INFOPLIST_FILE = ThumbnailTests/Info.plist;
@@ -460,6 +468,7 @@
 		1EAFBD822675135D00D84A4B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4Q3BR6HQNK;
 				INFOPLIST_FILE = ThumbnailTests/Info.plist;
